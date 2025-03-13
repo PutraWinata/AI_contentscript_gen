@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Content Script Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Content Script Generate</h1>
+        <p>Make your content script with AI</p>
+
+        <div class="input-container">
+            <label>Target Audience</label>
+            <input type="text" id="target" placeholder="Who is the content for?">
+
+            <label>Goal</label>
+            <input type="text" id="goal" placeholder="Awareness, engagement, sales, etc.">
+
+            <label>Platform</label>
+            <input type="text" id="platform" placeholder="TikTok, YouTube Shorts, Instagram Reels, etc.">
+
+            <label>Video length</label>
+            <input type="text" id="video_length" placeholder="15 sec, 30 sec, 1 min, etc">
+
+            <label>Tone and Style</label>
+            <input type="text" id="style" placeholder="Fun, educational, storytelling, etc.">
+
+            <label>Call to Action</label>
+            <input type="text" id="cta" placeholder="Comment, follow, visit link, purchase, etc.">
+            
+            <button onclick="generateContent()">Generate</button>
+        </div>
+
+        <div class="result-container" id="result">
+            <h2>Your Content Script</h2>
+            <p id="ai-response">The result will appear here...</p>
+        </div>
+
+        <!-- Loading Modal -->
+        <div id="loading-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <img src="/static/loading.gif" alt="Loading..." class="loading-icon">
+                <p>Generating content, please wait...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
